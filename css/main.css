@@ -471,7 +471,8 @@ input {
   display: block;
   font-size: 12px;
 }
-.back {
+.back,
+.toggle-tablet768__back {
   background: url('../image/previous.png') no-repeat;
   background-position: center;
   -moz-background-size: cover;
@@ -482,11 +483,13 @@ input {
   margin-left: 7px;
 }
 @media (max-width: 768px) {
-  .back {
+  .back,
+  .toggle-tablet768__back {
     margin-left: 15px;
   }
 }
-.next {
+.next,
+.toggle-tablet768__next {
   background: url('../image/next.png') no-repeat;
   background-position: center;
   -moz-background-size: cover;
@@ -497,14 +500,15 @@ input {
   margin-right: 7px;
 }
 @media (max-width: 768px) {
-  .next {
+  .next,
+  .toggle-tablet768__next {
     margin-right: 15px;
   }
 }
 .blog-content {
   max-width: 940px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 @media (max-width: 1024px) {
   .blog-content {
@@ -719,8 +723,9 @@ input {
 }
 @media (max-width: 425px) {
   .event-content__invited {
-    margin-top: 20px;
+    margin-top: 0px;
     border-bottom: 1px dotted #9f9f9f;
+    padding-top: 20px;
   }
 }
 .ceremony__title {
@@ -1307,13 +1312,6 @@ input {
   color: white;
   display: block;
 }
-.list425__link:hover {
-  border-bottom: 2px solid white;
-  background-color: #333333;
-}
-.list425__link:hover a {
-  color: #5F5F5F;
-}
 .imglink {
   display: none;
 }
@@ -1321,8 +1319,8 @@ input {
   display: none;
 }
 .open {
-  display: block;
-  border-bottom: none;
+  display: block !important;
+  border-bottom: none !important;
 }
 .open-foot {
   display: -webkit-box;
@@ -1331,3 +1329,12 @@ input {
   display: -ms-flexbox;
   display: flex;
 }
+/*
+.list425__link--open{
+	border-bottom: 2px solid white;
+	background-color:  #333333;
+	a{
+		color:#5F5F5F;
+	}
+
+}*/
